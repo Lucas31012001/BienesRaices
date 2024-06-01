@@ -1,0 +1,57 @@
+@include tablet{
+    .contenedor-anuncios{
+        @include grid(3, 2rem);
+    }
+}
+
+.anuncio{
+    background-color: lighten($gris, 5);
+    border: 1px solid darken($gris, 10);
+    @include tablet{
+        width: 38rem;
+    }
+
+    
+    
+    .contenido-anuncio{
+        padding: 2rem;
+    }
+
+    h3, p{
+        margin: 0;
+        /* Establecer estilos específicos para el párrafo de descripción */
+        white-space: nowrap; /* Por ejemplo, si quieres que el texto se muestre en una sola línea */
+        overflow: hidden; /* Si quieres que el texto se corte si es demasiado largo */
+        text-overflow: ellipsis; /* Esto añade puntos suspensivos (...) al final del texto que se corta */
+    }
+}
+
+.precio{
+    color: $verde;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.iconos-caracteristicas{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 40rem;
+
+    li{
+        flex: 1;
+        display: flex;
+
+        img{
+            flex: 0 0 5rem;
+            margin-right: 1rem;
+        }
+        p{
+            font-weight: $black;
+        }
+    }
+}
+
+.texto-anuncio{
+    word-wrap: break-word; // Esto permite que el texto salte de linea en lugar de que se salga del div
+}
