@@ -1,0 +1,10 @@
+ADMINISTRADOR DE LA APP
+    Usuario: correo@correo.com
+    Contraseña: 123456
+
+PARA EJECUTAR EN EL SERVIDOR WEB:
+    "cd public"
+    "php -S localhost:3000"
+    
+PARA EJECUTAR GULP PONER EN EL TERMINAL:
+    "npm run dev"
